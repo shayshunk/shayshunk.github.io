@@ -5,5 +5,5 @@
 .c-img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4)
+    filter: brightness(0.4) hue-rotate(240deg);
 }
