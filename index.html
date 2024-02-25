@@ -13,7 +13,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
+        <div class="container-fluid p-3 px-5">
             <a href="#" class="navbar-brand">Shashank Jayakumar</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cheesy">
@@ -40,16 +40,49 @@
     </nav>
 
     <!-- Showcase-->
-    <section class="bg-dark text-light p-5 text-center">
-        <div class="container">
-            <div class="d-sm-flex gap-3">
-                <div>
-                    <h1>Particle Physics <span class="text-warning">Simulations</span></h1>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="img/PII photon burst.png" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
                 </div>
-                <img class="img-fluid w-50" src="img/PII.png" alt="">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="img/Light guide v3.png" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="img/Data Displacement Z.png" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
