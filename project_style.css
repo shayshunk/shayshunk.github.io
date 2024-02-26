@@ -13,8 +13,14 @@ section {
     display: block;
 }
 
+.project-video {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 .blue {
-    background: blue;
+    background: rgb(0, 0, 69);
 }
 
 .red {
