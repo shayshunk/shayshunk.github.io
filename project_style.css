@@ -5,7 +5,26 @@ body {
 
 section {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.project-image {
+    height: 480px;
+    margin: auto;
+    display: block;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: rgb(163, 0, 0);
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.dark {
+    background: black;
 }
