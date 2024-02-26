@@ -7,3 +7,11 @@
     object-fit: cover;
     filter: brightness(0.4) hue-rotate(240deg);
 }
+
+.div-carousel {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
