@@ -8,9 +8,10 @@ section {
 }
 
 .project-image {
-    height: 480px;
     margin: auto;
     display: block;
+    max-width: 480px;
+    width: 100%
 }
 
 .project-video {
