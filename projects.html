@@ -42,15 +42,15 @@
     <!-- Showcase -->
     <div class="container-fluid">
         <section class="p-5 blue">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
                     <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Geometry Modeling</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        To answer design questions for the proposed PROSPECT-II detector, I built a parameterized GEANT4
-                        model. Simple options allow the users to construct any array of optical segments they wish.
-                        Easily modifiable geometrical parameters are given to accommodate different design parameters,
-                        such as window spacing and PMT housing thickness, with the detector resizing itself seamlessly
-                        to fit any user options.
+                        To answer design questions for the proposed PROSPECT-II detector, I built a parameterized model
+                        of it in GEANT4. Simple options allow the users to construct any array of optical segments they
+                        wish. Easily modifiable geometrical parameters are given to accommodate different design
+                        parameters, such as window spacing and PMT housing thickness, with the detector resizing itself
+                        seamlessly to fit any user options.
                     </p>
                 </div>
                 <div class="col d-flex align-items-center">
@@ -59,24 +59,38 @@
             </div>
         </section>
         <section class="p-5 dark">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
                     <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Optical Simulation</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        To answer design questions for the proposed PROSPECT-II detector, I built a parameterized
-                        GEANT4
-                        model.
-                        Simple options allow the users to construct any array of optical segments they wish. Easily
-                        modifiable
-                        geometrical parameters are given to accommodate different design parameters, such as window
-                        spacing and
-                        PMT housing thickness, with the detector resizing itself seamlessly to fit any user options.
+                        The optical model was then fine-tuned using data to produce a realistic detector response. A
+                        curved PMT surface (blue) records every photon that touches it. The scintillator, reflector
+                        panels, light guides, and other detector components are all modeled to reflect their real-life
+                        optical parameters. The model is highly optimized and can simulate upwards of 50,000 photons per
+                        second on a single thread, even on personal machines.
                     </p>
                 </div>
                 <div class="col px-5 d-flex align-items-center ms-auto">
                     <video controls autoplay class="project-video">
                         <source src="video/photons.mp4" type="video/mp4">
                     </video>
+                </div>
+            </div>
+        </section>
+        <section class="p-5 red">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Analysis Framework</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        Any capable simulation framework also requires a robust analysis pipeline. Detailed results from
+                        the optical model can be output either as ROOT or CSV files. For those more comfortable with
+                        Python, I wrote analysis code utilizing Pandas to quickly study the impact of design decisions
+                        on adverse effects like crosstalk. I also have ROOT code that performs similar functions as well
+                        as predicting the detector response with histogram look-up tables.
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img src="img/Crosstalk Results.png" class="img-fluid project-image">
                 </div>
             </div>
         </section>
