@@ -7,17 +7,24 @@ section {
     position: relative;
 }
 
+p {
+    text-align: justify;
+}
+
 .project-image {
-    margin: auto;
     display: block;
+    margin: auto;
     max-width: 480px;
-    width: 100%
+    width: 100%;
+    align-items: center;
 }
 
 .project-video {
     display: block;
     margin: auto;
     width: 100%;
+    align-items: center;
+
 }
 
 .blue {
