@@ -53,17 +53,13 @@ p {
 }
 
 .layer1 {
-    background-image: url('img/layer1.svg');
+    background-image: url('img/layerpinkred.svg');
 }
 
 .layer2 {
-    background-image: url('img/layer2.svg');
+    background-image: url('img/layerredblue.svg');
 }
 
 .layer3 {
-    background-image: url('img/layer3.svg');
-}
-
-.layer4 {
-    background-image: url('img/layer4.svg');
+    background-image: url('img/layerblueblack.svg');
 }
