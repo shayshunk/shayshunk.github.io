@@ -1,3 +1,3 @@
-#This is my portfolio website!
+# This is my portfolio website!
 
-##Go [here](https://shayshunk.github.io) to view it
+## [Click here](https://shayshunk.github.io) to view it
