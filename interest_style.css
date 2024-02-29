@@ -14,18 +14,18 @@ p {
 .project-image {
     display: block;
     margin: auto;
-    max-width: 480px;
+    max-width: 600px;
     width: 100%;
     align-items: center;
-    filter: brightness(0.8) hue-rotate(45deg);
+    filter: brightness(0.9) hue-rotate(0deg);
 }
 
 .project-video {
     display: block;
     margin: auto;
     width: 100%;
+    max-width: 900px;
     align-items: center;
-    filter: brightness(0.8);
 }
 
 .blue {

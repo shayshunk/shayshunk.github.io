@@ -41,62 +41,71 @@
 
     <!-- Showcase -->
     <div class="container-fluid">
-        <section class="px-5 pt-5 blue">
+        <section class="px-5 pt-5 pink">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
-                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Geometry Modeling</h1>
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Neural Networks</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        To answer design questions for the proposed PROSPECT-II detector, I built a parameterized model
-                        of it in GEANT4. Simple options allow the users to construct any array of optical segments they
-                        wish. Easily modifiable geometrical parameters are given to accommodate different design
-                        parameters, such as window spacing and PMT housing thickness, with the detector resizing itself
-                        seamlessly to fit any user options.
+                        In an exploration of how machine learning works, I built a neural network from scratch in raw
+                        Python. The only library used was numpy for some quicker calculations. This was a long project,
+                        where I wrote everything involved from the ground up. Neurons, layers, activation functions,
+                        loss, backpropagation, optimizers, testing, training, regression, and so on. The final result is
+                        what you see on the right. A deep neural network that's able to classify the randomly
+                        distributed spiral of red, blue, and green dot into their respective colors. I've also used this
+                        for predicting the detector response from my optical simulation.
                     </p>
                 </div>
                 <div class="col d-flex align-items-center">
-                    <img src="img/Light guide v3.png" class="img-fluid project-image">
+                    <img src="img/Prediction map.png" class="img-fluid project-image">
                 </div>
             </div>
         </section>
 
         <div class="spacer layer1"></div>
 
-        <section class="px-5 dark">
+        <section class="px-5 red">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
-                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Optical Simulation</h1>
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Ray Tracing</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        The optical model was then fine-tuned using data to produce a realistic detector response. A
-                        curved PMT surface (blue) records every photon that touches it. The scintillator, reflector
-                        panels, light guides, and other detector components are all modeled to reflect their real-life
-                        optical parameters. The model is highly optimized and can simulate upwards of 50,000 photons per
-                        second on a single thread, even on personal machines.
+                        Computer graphics are fascinating to me. Games used to mostly reproduce lighting in their scenes
+                        through rasterization, which focuses on object meshes and shading logic to produce images. These
+                        days, some games utilize ray tracing. Ray tracing is when the light in the scene is treated as
+                        realistically as possible, absorbing and bouncing around on every surface. I wrote a ray tracer
+                        from scratch to start understanding the fundamentals of how modern games use it in their
+                        lighting. This ray tracer supports multiple materials, bounded volume hierarchy, ray bouncing,
+                        motion blur, basic animation, anti-aliasing, and more. Eventually, this project will be
+                        translated to the Unity game engine, and I'll incorporate the GPU to start ray tracing in
+                        real-time with parallelization, like modern games do. This also happens to involve quite a bit
+                        of optical physics, which ties in well with my work on the PROSPECT-II optical simulations.
                     </p>
                 </div>
-                <div class="col px-5 d-flex align-items-center ms-auto">
-                    <video loop autoplay class="project-video">
-                        <source src="video/photons.mp4" type="video/mp4">
-                    </video>
+                <div class="col d-flex align-items-center">
+                    <img src="img/Ray Tracer.png" class="img-fluid project-image">
                 </div>
             </div>
         </section>
 
         <div class="spacer layer2"></div>
 
-        <section class="px-5 pb-5 red">
+        <section class="px-5 pb-5 blue">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
-                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Analysis Framework</h1>
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">3D Modeling</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        Any capable simulation framework also requires a robust analysis pipeline. Detailed results from
-                        the optical model can be output either as ROOT or CSV files. For those more comfortable with
-                        Python, I wrote analysis code utilizing Pandas to quickly study the impact of design decisions
-                        on adverse effects like crosstalk. I also have ROOT code that performs similar functions as well
-                        as predicting the detector response with histogram look-up tables.
+                        This one came out of both necessity and pure interest. In writing the paper on Neutrino
+                        Directionality, we found that there was no clear way to showcase the angles that PROSPECT was
+                        reconstructing relative to the reactor core. I decided that the best way to approach this was to
+                        build a 3D model in Blender and animate the camera moving around it. This was a chance to
+                        exercise some light artistic creativity as well as provide a new look at our detector. The
+                        result is what you see on the right, a model complete with materials and lighting, while still
+                        retaining the most accurate measurements of the detector and reactor core that we have.
                     </p>
                 </div>
-                <div class="col d-flex align-items-center">
-                    <img src="img/Crosstalk Results.png" class="img-fluid project-image">
+                <div class="col px-5 d-flex align-items-center ms-auto">
+                    <video loop autoplay class="project-video">
+                        <source src="video/PROSPECT.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </section>
@@ -106,15 +115,19 @@
         <section class="p-5 pink">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12">
-                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Neutrino Directionality</h1>
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Chess AI</h1>
                     <p class="text-justify-center text-light fs-4 p-2">
-                        An experimentalist's PhD isn't complete without analyzing real data, so my next project was
-                        getting to work on reconstructing the average antineutrino direction from the HFIR (High Flux
-                        Isotope Reactor) core at Oak Ridge National Laboratory. The PROSPECT collaboration has been able
-                        to produce what we believe is the world's most precise reconstruction of reactor antineutrino
-                        direction, despite the significant challenge of missing segments in the PROSPECT-I detector. The
-                        paper is in collaboration review at the moment and I'll add an arxiv link here when it's been
-                        uploaded.
+                        If you can build a competent Chess AI, you can build an AI for any type of game, right? That's
+                        my hope, at least. I mostly took on this project because the idea of pitting bots against older
+                        versions of the AI every time I added a new feature sounded really fun. The win rate going up
+                        with the inclusion of better algorithms and optimization was my main motivation. Then I found
+                        out that just getting the program to obey all the rules of chess is a much bigger project than
+                        I'd imagined. I did get there, however. The AI has been tested against official chess AIs like
+                        Stockfish to verify its following of the rules. It now only makes legal moves (this has been
+                        verified against millions and millions of possible positions). The "AI" just plays random moves
+                        at the moment, but they are all legal random moves. The next step when I have time will be
+                        incorporating bitboards to boost the depth calculation to possibly millions of positions per
+                        second.
                     </p>
                     <p class="text-center text-light fs-5 p-2">
                         (Results of plot subject to change)
