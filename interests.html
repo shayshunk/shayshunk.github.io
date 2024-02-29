@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="interest_style.css">
     <title>Website In Progress</title>
 </head>
 
@@ -38,6 +38,115 @@
             </div>
         </div>
     </nav>
+
+    <!-- Showcase -->
+    <div class="container-fluid">
+        <section class="px-5 pt-5 blue">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Geometry Modeling</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        To answer design questions for the proposed PROSPECT-II detector, I built a parameterized model
+                        of it in GEANT4. Simple options allow the users to construct any array of optical segments they
+                        wish. Easily modifiable geometrical parameters are given to accommodate different design
+                        parameters, such as window spacing and PMT housing thickness, with the detector resizing itself
+                        seamlessly to fit any user options.
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img src="img/Light guide v3.png" class="img-fluid project-image">
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="px-5 dark">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Optical Simulation</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        The optical model was then fine-tuned using data to produce a realistic detector response. A
+                        curved PMT surface (blue) records every photon that touches it. The scintillator, reflector
+                        panels, light guides, and other detector components are all modeled to reflect their real-life
+                        optical parameters. The model is highly optimized and can simulate upwards of 50,000 photons per
+                        second on a single thread, even on personal machines.
+                    </p>
+                </div>
+                <div class="col px-5 d-flex align-items-center ms-auto">
+                    <video loop autoplay class="project-video">
+                        <source src="video/photons.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer layer2"></div>
+
+        <section class="px-5 pb-5 red">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Analysis Framework</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        Any capable simulation framework also requires a robust analysis pipeline. Detailed results from
+                        the optical model can be output either as ROOT or CSV files. For those more comfortable with
+                        Python, I wrote analysis code utilizing Pandas to quickly study the impact of design decisions
+                        on adverse effects like crosstalk. I also have ROOT code that performs similar functions as well
+                        as predicting the detector response with histogram look-up tables.
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img src="img/Crosstalk Results.png" class="img-fluid project-image">
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer layer3"></div>
+
+        <section class="p-5 pink">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Neutrino Directionality</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        An experimentalist's PhD isn't complete without analyzing real data, so my next project was
+                        getting to work on reconstructing the average antineutrino direction from the HFIR (High Flux
+                        Isotope Reactor) core at Oak Ridge National Laboratory. The PROSPECT collaboration has been able
+                        to produce what we believe is the world's most precise reconstruction of reactor antineutrino
+                        direction, despite the significant challenge of missing segments in the PROSPECT-I detector. The
+                        paper is in collaboration review at the moment and I'll add an arxiv link here when it's been
+                        uploaded.
+                    </p>
+                    <p class="text-center text-light fs-5 p-2">
+                        (Results of plot subject to change)
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img src="img/FinalPlot.png" class="img-fluid project-image">
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer layer4"></div>
+
+        <section class="p-5 dark">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="text-justify-center text-light fw-bolder display-4 p-2">Extracting Systematics</h1>
+                    <p class="text-justify-center text-light fs-4 p-2">
+                        Similarly, no paper is complete without a thorough exploration of possible systematic biases.
+                        Using background radioactivity present in the PROSPECT-I detector, I verified our directionality
+                        methodology while also calculating systematic uncertainties that might be present. The
+                        <sup>214</sup>Bi&rarr;<sup>214</sup>Po decay results from the decay chain of the ubiqituous gas,
+                        <sup>222</sup>Rn. Applying the same directionality techniques to this decay allows us to measure
+                        the precision of our position reconstruction.
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <img src="img/BiPo.png" class="img-fluid project-image">
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
