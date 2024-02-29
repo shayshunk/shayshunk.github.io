@@ -74,3 +74,11 @@ p {
 .layer3 {
     background-image: url('img/layerblueblack.svg');
 }
+
+.rt-image {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
+}
