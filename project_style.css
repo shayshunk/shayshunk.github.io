@@ -83,6 +83,14 @@ p {
     animation-range: entry;
 }
 
+.text-fade {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
 .blue {
     background: #000045;
 }
