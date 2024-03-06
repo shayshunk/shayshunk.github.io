@@ -110,11 +110,11 @@ p {
     @media only screen and (max-width: 600px) {
         .text-fade {
             opacity: 0;
-            transform: translateX(-80%);
+            transform: translateX(0%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
-            animation-range-end: entry 40%;
+            animation-range-end: entry 70%;
             filter: blur(5px);
         }
     }
