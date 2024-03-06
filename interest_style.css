@@ -131,7 +131,7 @@ p {
 
         .text-fade-final {
             opacity: 0;
-            transform: translateX(10%);
+            transform: translateX(20%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
