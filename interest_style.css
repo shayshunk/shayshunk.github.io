@@ -26,6 +26,19 @@
 
 body {
     background: rgb(7, 7, 7);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 section {
@@ -87,13 +100,13 @@ p {
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
-            animation-range-end: entry 250%;
+            animation-range-end: entry 150%;
             filter: blur(5px);
         }
 
         .text-fade {
             opacity: 0;
-            transform: translateX(-80%);
+            transform: translateX(50%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
@@ -103,7 +116,7 @@ p {
 
         .text-fade-final {
             opacity: 0;
-            transform: translateX(-80%);
+            transform: translateX(50%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
@@ -124,7 +137,7 @@ p {
     @media (max-width: 700px) {
         .text-fade {
             opacity: 0;
-            transform: translateX(10%);
+            transform: translateX(20%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
