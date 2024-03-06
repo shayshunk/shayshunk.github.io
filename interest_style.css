@@ -58,64 +58,67 @@ p {
         }
     }
 
-    .project-image {
-        display: block;
-        margin: auto;
-        max-width: 800px;
-        width: 100%;
-        align-items: center;
-        filter: brightness(0.9) hue-rotate(0deg);
-        scale: 0.8;
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: entry;
-        animation-range-end: entry 120%;
-        filter: blur(5px);
-    }
+    @media (min-width: 701px) {
 
-    .project-video {
-        display: block;
-        margin: auto;
-        width: 100%;
-        max-width: 900px;
-        align-items: center;
-        scale: 0.8;
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: entry;
-        animation-range-end: entry 250%;
-        filter: blur(5px);
-    }
+        .project-image {
+            display: block;
+            margin: auto;
+            max-width: 800px;
+            width: 100%;
+            align-items: center;
+            filter: brightness(0.9) hue-rotate(0deg);
+            scale: 0.8;
+            opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 120%;
+            filter: blur(5px);
+        }
 
-    .text-fade {
-        opacity: 0;
-        transform: translateX(-80%);
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: entry;
-        animation-range-end: entry 140%;
-        filter: blur(5px);
-    }
+        .project-video {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 900px;
+            align-items: center;
+            scale: 0.8;
+            opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 250%;
+            filter: blur(5px);
+        }
 
-    .text-fade-final {
-        opacity: 0;
-        transform: translateX(-80%);
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: entry;
-        animation-range-end: entry 120%;
-        filter: blur(5px);
-    }
+        .text-fade {
+            opacity: 0;
+            transform: translateX(-80%);
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 140%;
+            filter: blur(5px);
+        }
 
-    .header-fade {
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range-start: entry;
-        animation-range-end: entry 300%;
-        filter: blur(5px);
+        .text-fade-final {
+            opacity: 0;
+            transform: translateX(-80%);
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 120%;
+            filter: blur(5px);
+        }
+
+        .header-fade {
+            opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 300%;
+            filter: blur(5px);
+        }
     }
 
     @media (max-width: 700px) {
@@ -135,7 +138,7 @@ p {
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
-            animation-range-end: entry 120%;
+            animation-range-end: entry 70%;
             filter: blur(5px);
         }
 
