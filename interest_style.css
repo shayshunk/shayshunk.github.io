@@ -142,6 +142,15 @@ p {
             filter: blur(5px);
         }
 
+        .header-fade {
+            opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 300%;
+            filter: blur(5px);
+        }
+
         .project-image {
             display: block;
             margin: auto;
