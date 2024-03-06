@@ -107,7 +107,8 @@ p {
         filter: blur(5px);
     }
 
-    @media only screen and (max-width: 600px) {
+    @media (pointer:none),
+    (pointer:coarse) {
         .text-fade {
             opacity: 0;
             transform: translateX(0%);
