@@ -47,6 +47,15 @@ p {
     }
 }
 
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0%);
+    }
+}
+
 .project-image {
     display: block;
     margin: auto;
@@ -54,19 +63,13 @@ p {
     width: 100%;
     align-items: center;
     filter: brightness(0.8) hue-rotate(45deg);
-    scale: 0.9;
+    scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range-start: entry 100px;
-    animation-range-end: contain 30%;
-}
-
-@keyframes fade-in {
-    to {
-        scale: 1;
-        opacity: 1;
-    }
+    animation-range-start: entry;
+    animation-range-end: entry 120%;
+    filter: blur(5px);
 }
 
 .project-video {
@@ -79,17 +82,28 @@ p {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range-start: entry 100px;
-    animation-range-end: contain 30%;
+    animation-range-start: entry;
+    animation-range-end: entry 250%;
+    filter: blur(5px);
 }
 
 .text-fade {
-    scale: 0.8;
+    opacity: 0;
+    transform: translateX(-80%);
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: entry;
+    animation-range-end: entry 140%;
+    filter: blur(5px);
+}
+
+.header-fade {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range-start: entry 100px;
-    animation-range-end: contain 30%;
+    animation-range-start: entry;
+    animation-range-end: entry 300%;
+    filter: blur(5px);
 }
 
 .blue {
