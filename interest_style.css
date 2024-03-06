@@ -157,6 +157,21 @@ p {
             animation-range-end: entry 10%;
             filter: blur(5px);
         }
+
+        .project-video {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 900px;
+            align-items: center;
+            scale: 0.8;
+            opacity: 0;
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: entry 250%;
+            filter: blur(5px);
+        }
     }
 }
 
