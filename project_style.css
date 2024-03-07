@@ -105,12 +105,12 @@ p {
 
         .text-fade {
             opacity: 0;
-            transform: translateX(-80%);
+            transform: translateX(20%);
             animation: fade-in linear forwards;
             animation-timeline: view();
             animation-range-start: entry;
-            animation-range-end: entry 140%;
-            filter: blur(5px);
+            animation-range-end: entry 180%;
+            filter: blur(8px);
         }
 
         .header-fade {
@@ -119,7 +119,7 @@ p {
             animation-timeline: view();
             animation-range-start: entry;
             animation-range-end: entry 300%;
-            filter: blur(5px);
+            filter: blur(8px);
         }
     }
 
