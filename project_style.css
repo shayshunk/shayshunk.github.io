@@ -5,11 +5,11 @@
 .nav-link::after {
   content: "";
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.33s;
   height: 2px;
   width: 100%;
   max-width: 200px;
-  background-color: rgb(107, 107, 107);
+  background-color: white;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,9 +19,21 @@
   opacity: 1;
 }
 
-.nav-link.active::after {
+.nav-link.current::after {
   background-color: white;
   opacity: 1;
+}
+
+.nav-link:not(.current) {
+  opacity: 0.75;
+}
+
+.menu-items:hover .nav-link:hover {
+  opacity: 1;
+  transition: all 0.33s;
+}
+.menu-items:hover .nav-link {
+  opacity: 0.3;
 }
 
 body {
