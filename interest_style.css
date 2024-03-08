@@ -1,234 +1,232 @@
 .nav-link {
-    position: relative;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    opacity: 0;
-    transition: all 0.3s;
-    height: 2px;
-    width: 100%;
-    max-width: 200px;
-    background-color: rgb(107, 107, 107);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  height: 2px;
+  width: 100%;
+  max-width: 200px;
+  background-color: rgb(107, 107, 107);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .nav-link:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .nav-link.active::after {
-    background-color: white;
-    opacity: 1;
+  background-color: white;
+  opacity: 1;
 }
 
 body {
-    background: rgb(7, 7, 7);
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  background: rgb(7, 7, 7);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 section {
-    position: relative;
+  position: relative;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-    p {
-        text-align: center;
-    }
+  p {
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  @keyframes fade-in {
+    to {
+      scale: 1;
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateX(0%);
+    }
+  }
 
-    @keyframes fade-in {
-        to {
-            scale: 1;
-            opacity: 1;
-            filter: blur(0px);
-            transform: translateX(0%);
-        }
+  @media (min-width: 701px) {
+    .project-image {
+      display: block;
+      margin: auto;
+      max-width: 800px;
+      width: 100%;
+      align-items: center;
+      filter: brightness(0.9) hue-rotate(0deg);
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 120%;
+      filter: blur(5px);
     }
 
-    @media (min-width: 701px) {
-
-        .project-image {
-            display: block;
-            margin: auto;
-            max-width: 800px;
-            width: 100%;
-            align-items: center;
-            filter: brightness(0.9) hue-rotate(0deg);
-            scale: 0.8;
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 120%;
-            filter: blur(5px);
-        }
-
-        .project-video {
-            display: block;
-            margin: auto;
-            width: 100%;
-            max-width: 900px;
-            align-items: center;
-            scale: 0.8;
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 150%;
-            filter: blur(5px);
-        }
-
-        .text-fade {
-            opacity: 0;
-            transform: translateX(20%);
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 180%;
-            filter: blur(8px);
-        }
-
-        .text-fade-final {
-            opacity: 0;
-            transform: translateX(20%);
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 120%;
-            filter: blur(8px);
-        }
-
-        .header-fade {
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 300%;
-            filter: blur(5px);
-        }
+    .project-video {
+      display: block;
+      margin: auto;
+      width: 100%;
+      max-width: 900px;
+      align-items: center;
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 150%;
+      filter: blur(5px);
     }
 
-    @media (max-width: 700px) {
-        .text-fade {
-            opacity: 0;
-            transform: translateX(20%);
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 70%;
-            filter: blur(5px);
-        }
-
-        .text-fade-final {
-            opacity: 0;
-            transform: translateX(20%);
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 70%;
-            filter: blur(5px);
-        }
-
-        .header-fade {
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 300%;
-            filter: blur(5px);
-        }
-
-        .project-image {
-            display: block;
-            margin: auto;
-            max-width: 800px;
-            width: 100%;
-            align-items: center;
-            filter: brightness(0.9) hue-rotate(0deg);
-            scale: 0.8;
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry 20%;
-            animation-range-end: entry 10%;
-            filter: blur(5px);
-        }
-
-        .project-video {
-            display: block;
-            margin: auto;
-            width: 100%;
-            max-width: 900px;
-            align-items: center;
-            scale: 0.8;
-            opacity: 0;
-            animation: fade-in linear forwards;
-            animation-timeline: view();
-            animation-range-start: entry;
-            animation-range-end: entry 250%;
-            filter: blur(5px);
-        }
+    .text-fade {
+      opacity: 0;
+      transform: translateX(20%);
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 180%;
+      filter: blur(8px);
     }
+
+    .text-fade-final {
+      opacity: 0;
+      transform: translateX(20%);
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 120%;
+      filter: blur(8px);
+    }
+
+    .header-fade {
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 300%;
+      filter: blur(5px);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .text-fade {
+      opacity: 0;
+      transform: translateX(20%);
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 70%;
+      filter: blur(5px);
+    }
+
+    .text-fade-final {
+      opacity: 0;
+      transform: translateX(20%);
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 70%;
+      filter: blur(5px);
+    }
+
+    .header-fade {
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 300%;
+      filter: blur(5px);
+    }
+
+    .project-image {
+      display: block;
+      margin: auto;
+      max-width: 800px;
+      width: 100%;
+      align-items: center;
+      filter: brightness(0.9) hue-rotate(0deg);
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry 20%;
+      animation-range-end: entry 10%;
+      filter: blur(5px);
+    }
+
+    .project-video {
+      display: block;
+      margin: auto;
+      width: 100%;
+      max-width: 900px;
+      align-items: center;
+      scale: 0.8;
+      opacity: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: entry 250%;
+      filter: blur(5px);
+    }
+  }
 }
 
 .blue {
-    background: #000045;
+  background: #000045;
 }
 
 .red {
-    background: #cf0000;
+  background: #cf0000;
 }
 
 .pink {
-    background: #ff0066;
+  background: #ff0066;
 }
 
 .dark {
-    background: #000000;
+  background: #000000;
 }
 
 .spacer {
-    aspect-ratio: 960/180;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  aspect-ratio: 960/180;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .layer1 {
-    background-image: url('img/layerpinkred.svg');
+  background-image: url("img/layerpinkred.svg");
 }
 
 .layer2 {
-    background-image: url('img/layerredblue.svg');
+  background-image: url("img/layerredblue.svg");
 }
 
 .layer3 {
-    background-image: url('img/layerblueblack.svg');
+  background-image: url("img/layerblueblack.svg");
 }

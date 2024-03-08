@@ -1,84 +1,92 @@
 .c-item {
-    height: 600px;
+  height: 600px;
 }
 
 .c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.4) hue-rotate(240deg);
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4) hue-rotate(240deg);
 }
 
 .div-carousel {
-    background-color: black;
+  background-color: black;
 }
 
 .nav-link {
-    position: relative;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    opacity: 0;
-    transition: all 0.3s;
-    height: 2px;
-    width: 100%;
-    max-width: 200px;
-    background-color: rgb(107, 107, 107);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  height: 2px;
+  width: 100%;
+  max-width: 200px;
+  background-color: rgb(107, 107, 107);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .nav-link:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .nav-link.active::after {
-    background-color: white;
-    opacity: 1;
+  background-color: white;
+  opacity: 1;
+}
+
+#menu-items:hover {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .nav-link:hover {
+  opacity: 1;
 }
 
 body {
-    background: rgb(0, 0, 0);
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  background: rgb(0, 0, 0);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .project-image {
-    display: block;
-    margin: auto;
-    max-width: 800px;
-    width: 100%;
-    align-items: center;
-    filter: brightness(0.8) hue-rotate(45deg);
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  align-items: center;
+  filter: brightness(0.8) hue-rotate(45deg);
 }
 
 p {
-    text-align: justify-center;
+  text-align: justify-center;
 }
 
 h3 {
-    text-align: justify;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
-    h3 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-    p {
-        text-align: justify-center;
-    }
+  p {
+    text-align: justify-center;
+  }
 }
