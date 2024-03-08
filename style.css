@@ -31,23 +31,32 @@
 
 .nav-link:hover::after {
   opacity: 1;
+  transition: all 0.6s ease;
 }
 
 .nav-link.current::after {
   background-color: white;
   opacity: 1;
+  transition: all 0.6s ease;
+}
+
+.nav-link.current {
+  opacity: 1;
+  transition: all 0.6s ease;
 }
 
 .nav-link:not(.current) {
   opacity: 0.75;
+  transition: all 0.6s ease;
 }
 
 .menu-items:hover .nav-link:hover {
   opacity: 1;
-  transition: all 0.33s;
+  transition: all 0.6s ease;
 }
 .menu-items:hover .nav-link {
   opacity: 0.3;
+  transition: all 0.6s ease;
 }
 
 body {
