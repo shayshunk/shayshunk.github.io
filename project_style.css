@@ -47,9 +47,9 @@
 
 body {
   background: rgb(7, 7, 7);
-  animation: fadeInAnimation ease 3s;
+  /* animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInAnimation {
@@ -81,7 +81,7 @@ p {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   @keyframes fade-in {
     to {
       scale: 1;
@@ -140,20 +140,7 @@ p {
       animation-range-start: entry;
       animation-range-end: entry 300%;
       filter: blur(8px);
-    }
-  }
-
-  @media (max-width: 700px) {
-    .text-fade {
-      opacity: 0;
-      transform: translateX(20%);
-      animation: fade-in linear forwards;
-      animation-timeline: view();
-      animation-range-start: entry;
-      animation-range-end: entry 70%;
-      filter: blur(5px);
-    }
-
+    }observer
     .header-fade {
       opacity: 0;
       animation: fade-in linear forwards;
@@ -194,7 +181,7 @@ p {
       filter: blur(5px);
     }
   }
-}
+} */
 
 .project-image {
   display: block;
@@ -250,4 +237,23 @@ p {
 
 .layer4 {
   background-image: url("img/layerpinkblack.svg");
+}
+
+.text-fade {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(20%);
+  transition: all 1s ease;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show-text {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
