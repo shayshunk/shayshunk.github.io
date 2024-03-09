@@ -3,9 +3,9 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       console.log(entry);
       if (entry.isIntersecting) {
-        entry.target.classList.add("show-text");
+        entry.target.classList.add("show");
       } else {
-        entry.target.classList.remove("show-text");
+        entry.target.classList.remove("show");
       }
     });
   },
@@ -14,5 +14,5 @@ const observer = new IntersectionObserver(
   }
 );
 
-const hiddenTextElements = document.querySelectorAll(".text-fade");
+const hiddenTextElements = document.querySelectorAll(".hidden");
 hiddenTextElements.forEach((el) => observer.observe(el));

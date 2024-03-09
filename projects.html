@@ -50,8 +50,8 @@
       <section class="px-lg-5 px-3 pt-5 blue">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12">
-            <h1 class="text-light fw-bolder display-4 p-2 text-fade">Geometry Modeling</h1>
-            <p class="text-light fs-4 p-lg-2 text-fade">
+            <h1 class="text-light fw-bolder display-4 p-2 text-fade hidden">Geometry Modeling</h1>
+            <p class="text-light fs-4 p-lg-2 text-fade hidden">
               To answer design questions for the proposed PROSPECT-II detector, I built a parameterized model of it in
               GEANT4. Simple options allow the users to construct any array of optical segments they wish. Easily
               modifiable geometrical parameters are given to accommodate different design parameters, such as window
@@ -59,7 +59,7 @@
             </p>
           </div>
           <div class="col d-flex align-items-center">
-            <img src="img/Light guide v3.png" class="img-fluid project-image" />
+            <img src="img/Light guide v3.png" class="img-fluid project-image hidden" />
           </div>
         </div>
       </section>
@@ -69,8 +69,8 @@
       <section class="px-lg-5 px-3 dark">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12">
-            <h1 class="text-light fw-bolder display-4 p-2 text-fade">Optical Simulation</h1>
-            <p class="text-light fs-4 p-lg-2 text-fade">
+            <h1 class="text-light fw-bolder display-4 p-2 text-fade hidden">Optical Simulation</h1>
+            <p class="text-light fs-4 p-lg-2 text-fade hidden">
               The optical model was then fine-tuned using data to produce a realistic detector response. A curved PMT
               surface (blue) records every photon that touches it. The scintillator, reflector panels, light guides, and
               other detector components are all modeled to reflect their real-life optical parameters. The model is
@@ -79,7 +79,7 @@
             </p>
           </div>
           <div class="col px-5 d-flex align-items-center ms-auto">
-            <video loop autoplay class="project-video">
+            <video loop autoplay muted class="project-video hidden">
               <source src="video/photons.mp4" type="video/mp4" />
             </video>
           </div>
@@ -91,8 +91,8 @@
       <section class="px-lg-5 px-3 red">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12">
-            <h1 class="text-light fw-bolder display-4 p-2 text-fade">Analysis Framework</h1>
-            <p class="text-light fs-4 p-lg-2 text-fade">
+            <h1 class="text-light fw-bolder display-4 p-2 text-fade hidden">Analysis Framework</h1>
+            <p class="text-light fs-4 p-lg-2 text-fade hidden">
               Any capable simulation framework also requires a robust analysis pipeline. Detailed results from the
               optical model can be output either as ROOT or CSV files. For those more comfortable with Python, I wrote
               analysis code utilizing Pandas to quickly study the impact of design decisions on adverse effects like
@@ -101,7 +101,7 @@
             </p>
           </div>
           <div class="col d-flex align-items-center">
-            <img src="img/Crosstalk Results.png" class="img-fluid project-image" />
+            <img src="img/Crosstalk Results.png" class="img-fluid project-image hidden" />
           </div>
         </div>
       </section>
@@ -111,8 +111,8 @@
       <section class="px-lg-5 px-3 pink">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12">
-            <h1 class="text-light fw-bolder display-4 p-2 text-fade">Neutrino Directionality</h1>
-            <p class="text-light fs-4 p-lg-2 text-fade">
+            <h1 class="text-light fw-bolder display-4 p-2 text-fade hidden">Neutrino Directionality</h1>
+            <p class="text-light fs-4 p-lg-2 text-fade hidden">
               An experimentalist's PhD isn't complete without analyzing real data, so my next project was getting to
               work on reconstructing the average antineutrino direction from the HFIR (High Flux Isotope Reactor) core
               at Oak Ridge National Laboratory. The PROSPECT collaboration has been able to produce what we believe is
@@ -120,10 +120,10 @@
               challenge of missing segments in the PROSPECT-I detector. The paper is in collaboration review at the
               moment and I'll add an arxiv link here when it's been uploaded.
             </p>
-            <p class="text-center text-light fs-5 p-2 text-fade">(Results of plot subject to change)</p>
+            <p class="text-center text-light fs-5 p-2 text-fade hidden">(Results of plot subject to change)</p>
           </div>
           <div class="col d-flex align-items-center">
-            <img src="img/FinalPlot.png" class="img-fluid project-image" />
+            <img src="img/FinalPlot.png" class="img-fluid project-image hidden" />
           </div>
         </div>
       </section>
@@ -133,8 +133,8 @@
       <section class="px-lg-5 px-3 pb-xxl-5 dark">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-12">
-            <h1 class="text-light fw-bolder display-4 p-2 text-fade">Extracting Systematics</h1>
-            <p class="text-light fs-4 p-lg-2 text-fade">
+            <h1 class="text-light fw-bolder display-4 p-2 text-fade hidden">Extracting Systematics</h1>
+            <p class="text-light fs-4 p-lg-2 text-fade hidden">
               Similarly, no experimental paper is complete without a thorough exploration of possible systematic biases.
               Using background radioactivity present in the PROSPECT-I detector, I verified our directionality
               methodology while also calculating systematic uncertainties that might be present. The
@@ -144,7 +144,7 @@
             </p>
           </div>
           <div class="col d-flex align-items-center pb-5">
-            <img src="img/BiPo.png" class="img-fluid project-image" />
+            <img src="img/BiPo.png" class="img-fluid project-image hidden" />
           </div>
         </div>
       </section>
