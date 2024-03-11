@@ -11,7 +11,6 @@
 ::-webkit-scrollbar-thumb {
   background: hsl(182, 20%, 20%, 0.5);
   border-radius: 100vw;
-  transition: all 1s ease;
 }
 
 ::-webkit-scrollbar-track:hover {
@@ -43,34 +42,33 @@
 
 .nav-link:hover::after {
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
 
 .nav-link.current::after {
   background-color: white;
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
 
 .nav-link.current {
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
 
 .nav-link:not(.current) {
   opacity: 0.75;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
 
 .menu-items:hover .nav-link:hover {
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
 .menu-items:hover .nav-link {
   opacity: 0.3;
-  transition: all 0.6s ease;
+  transition: all 0.6s ease-in;
 }
-
 body {
   background: rgb(7, 7, 7);
 }
