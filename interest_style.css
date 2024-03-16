@@ -32,7 +32,6 @@
 .nav-link::after {
   content: "";
   opacity: 0;
-  transition: all 0.33s;
   height: 2px;
   width: 100%;
   max-width: 200px;
@@ -44,32 +43,32 @@
 
 .nav-link:hover::after {
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .nav-link.current::after {
   background-color: white;
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .nav-link.current {
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .nav-link:not(.current) {
   opacity: 0.75;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu-items:hover .nav-link:hover {
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 .menu-items:hover .nav-link {
   opacity: 0.3;
-  transition: all 0.6s ease-in;
+  transition: all 0.4s ease-in;
 }
 body {
   background: rgb(7, 7, 7);
