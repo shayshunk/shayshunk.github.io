@@ -87,9 +87,9 @@
 
 body {
   background: rgb(0, 0, 0);
-  animation: fadeInAnimation ease 3s;
+  /* animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInAnimation {
@@ -128,4 +128,23 @@ h3 {
   p {
     text-align: justify-center;
   }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.text-fade.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s ease;
+}
+
+.text-fade.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
